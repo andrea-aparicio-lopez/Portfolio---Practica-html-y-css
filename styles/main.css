@@ -1,0 +1,30 @@
+:root {
+    --primary-background-color: rgb(156, 180, 166);
+    --secondary-background-color: rgb(89, 119, 103);
+    --main-title-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+#main-title {
+    color: var(--main-title-color);
+}
+
+header {
+    background-color: var(--secondary-background-color);
+}
+
+.titulo-seccion {
+    border-bottom: 2px, solid, white;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: var(--secondary-background-color); 
+}
+
