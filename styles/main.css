@@ -1,19 +1,35 @@
 :root {
-    --primary-background-color: rgb(156, 180, 166);
-    --secondary-background-color: rgb(89, 119, 103);
-    --main-title-color: rgb(255, 255, 255);
+    --primary-background-color: rgb(195, 209, 191);
+    --secondary-background-color: rgb(93, 155, 139);
+    --main-title-color: rgb(128,151,123);
 }
 
 body {
     background-color: var(--primary-background-color);
 }
 
+header {
+    background-color: rgb(222,223,220);
+    background-image: url('../images/montsera-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #main-title {
     color: var(--main-title-color);
 }
 
-header {
-    background-color: var(--secondary-background-color);
+#pfp {
+    border-radius: 35%;
+}
+
+
+
+
+#title-pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo-seccion {
