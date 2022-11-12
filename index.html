@@ -26,17 +26,50 @@
 
     </header>
     <main> 
-        <div class="personal-info">
-            <h2 id="sobre-mi" class="título-seccion">Sobre mí</h2>
-            <div class="pi-section" id="quien-soy">
-                <h3 class="titulo-subseccion">Quién soy</h3>
+        <div class="info" id="personal-info">
+            <h2 class="section-title" id="sobre-mi">Sobre mí</h2>
+            <div class="info-section" id="quien-soy">
+                <h3 class="subsection-title">Quién soy</h3>
+                <p class="main-p" id="quien-soy-p">Hola! Me llamo Andrea y soy una joven de 
+                    18 años a la que le encanta viajar, dibujar y hacer deporte.
+                    Soy muy activa y curiosa, alegre y atenta, y a veces un poco 
+                    impaciente &#128517</p>
             </div>
-            <div class="pi-section" id="skills">
-                <h3 class="titulo-subseccion">Mis skills</h3>
+            <div class="info-section" id="mis-skills">
+                <h3 class="subsection-title">Mis skills</h3>
+                <p>Aún estoy aprendiendo a programar, ¡pasa el ratón por cada barra para averiguar
+                    mi progreso!
+                </p>
+                <div class="progressbars" id="skill-progressbars">
+                    <p class="skill" id="python">Python</p>
+                    <p class="skill" id="git">Git</p>
+                    <p class="skill" id="html">Html y CSS</p>
+                    <p class="skill" id="js">JavaScript</p>
+                    <p class="skill" id="yo">¡Entusiasmo e interés!</p>
+                </div>
             </div>
         </div>
-        <div class="contact-form">
-
+        <div class="form-cont" id="contact-form-cont">
+            <h2>Contacto</h2>
+            <form action="contacto-registrado.html" method="post" class="form" id="contact-form">
+                <div></div>
+                    <div class="form-section">
+                        <label for="name">Nombre</label>
+                        <input required type="text" class="text" id="name" placeholder="Escribe tu nombre">
+                    </div>
+                    <div class="form-section">
+                        <label for="last-name">Apellidos</label>
+                        <input required type="text" class="text" id="last-name" placeholder="Escribe tus apellidos">
+                    </div>
+                    <div class="form-section">
+                        <label for="telf">Teléfono</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-section">
+                        <label for=""></label>
+                        <input type="text">
+                </div>
+            </form>
         </div>
     </main>
     <footer>

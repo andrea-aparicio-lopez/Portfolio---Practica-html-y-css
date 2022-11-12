@@ -1,4 +1,7 @@
-/* xs devices, no media queries  */
+/* xs devices */
+@media (max-width: 575px) {
+    
+}
 
 /* small devices (landscape phones) */
 @media (min-width: 576px) {
@@ -7,12 +10,20 @@
 
 /* medium devices (tablets) */
 @media (min-width: 768px) {
-
+ .skill {
+    width: 70%;
+ }
 }
 
 /* large devices (desktops) */
 @media (min-width: 992px) {
-    
+    .skill {
+        width: 35%;
+    }
+
+    .form-cont {
+        margin: 10vh 4vw;
+    }
 }
 
 /* xl devices (large desktops) */
