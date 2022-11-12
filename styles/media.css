@@ -1,0 +1,26 @@
+/* xs devices, no media queries  */
+
+/* small devices (landscape phones) */
+@media (min-width: 576px) {
+    
+}
+
+/* medium devices (tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* large devices (desktops) */
+@media (min-width: 992px) {
+    
+}
+
+/* xl devices (large desktops) */
+@media (min-width: 1200px) {
+
+}
+
+/* xxl devices (larger desktops) */
+@media (min-width: 1400px) {
+
+}

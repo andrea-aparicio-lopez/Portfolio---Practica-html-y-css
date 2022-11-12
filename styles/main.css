@@ -2,36 +2,53 @@
     --primary-background-color: rgb(195, 209, 191);
     --secondary-background-color: rgb(93, 155, 139);
     --main-title-color: rgb(128,151,123);
+    --secondary-title-color: rgb(219,219,219);
 }
 
 body {
     background-color: var(--primary-background-color);
 }
 
-header {
-    background-color: rgb(222,223,220);
+/* HEADER STYLE */
+.header-main {
+    background-color: var(--secondary-title-color);
     background-image: url('../images/montsera-background.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pfp {
+    border-radius: 35%;
+    padding-top: 3%;
 }
 
 #main-title {
     color: var(--main-title-color);
 }
 
-#pfp {
-    border-radius: 35%;
-}
-
-
-
-
-#title-pfp {
+.header-nav {
+    background-color: var(--secondary-background-color);
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.header-nav .link {
+    padding: 2vh 3vh;
+    color: var(--secondary-title-color);
+    text-decoration: none;
+}
+
+.header-nav .link:hover {
+    animation: navbar-hover 0.5s;
+    color: var(--secondary-background-color);
+    background-color: var(--secondary-title-color);
+}
+
+/* BODY STYLE */
 .titulo-seccion {
     border-bottom: 2px solid white;
 }
@@ -44,3 +61,16 @@ header {
     background-color: var(--secondary-background-color); 
 }
 
+
+
+/* ANIMATIONS */
+
+@keyframes navbar-hover {
+    from {
+        background-color: none;  
+    }
+    to {
+        color: var(--secondary-background-color);
+        background-color: var(--secondary-title-color);
+    }
+}
