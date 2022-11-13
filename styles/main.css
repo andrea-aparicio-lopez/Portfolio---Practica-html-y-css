@@ -95,6 +95,10 @@ body {
     color: var(--secondary-title-color);
 }
 
+#js:hover{
+    color: black;
+}
+
 .skill::before {
     content: "";
     background-color: var(--secondary-background-color);
@@ -137,14 +141,62 @@ body {
     padding: 3px 15px;
 }
 
+.form-heading {
+    padding-left: 4vw;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
+#contactform-inside-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
 .form-section {
-    padding: 10px 20px;
+    padding: 10px 25% 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-radio-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.submit-btn {
+    margin: 10px 5vw;
+    width: 20vw;
+    height: 5vh;
+    background-color: var(--primary-background-color);
+    border: none;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-background-color);
 }
 
 /* FOOTER STYLE */

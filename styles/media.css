@@ -1,37 +1,123 @@
 /* xs devices */
 @media (max-width: 575px) {
-    
+    #skills-description-desktop {
+        display: none;
+    }
+
+     #contactform-inside-cont {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+
+      
 }
 
 /* small devices (landscape phones) */
 @media (min-width: 576px) {
-    
+    #skills-description-desktop {
+        display: none;
+    }
+
+    .submit-btn {
+        align-self: center;
+        width: 15%;
+        height: 8vh;
+    }
 }
 
 /* medium devices (tablets) */
 @media (min-width: 768px) {
- .skill {
-    width: 70%;
- }
+    .skill {
+        width: 70%;
+    }
+
+    #skills-description-desktop {
+        display: none;
+    }
+    
+    .submit-btn {
+        align-self: center;
+        width: 15%;
+        height: 5vh;
+    }
 }
 
 /* large devices (desktops) */
 @media (min-width: 992px) {
+    .header-nav .link {
+        padding: 3vh 4vh;
+        font-size: large;
+    }
+
     .skill {
         width: 35%;
+    }
+
+    #skills-description-mobile {
+       display: none;
+    }
+
+    #skills-description-desktop {
+        display: contents;
     }
 
     .form-cont {
         margin: 10vh 4vw;
     }
+
+    .submit-btn {
+        align-self: center;
+        width: 15%;
+        height: 8vh;
+    }
+
+    .form-heading {
+        padding-left: 2vw;
+    }
 }
 
-/* xl devices (large desktops) */
+/* XL devices (large desktops) */
 @media (min-width: 1200px) {
+    .header-nav .link {
+        padding: 3vh 4vh;
+        font-size: large;
+    }
 
+    #skills-description-mobile {
+        display: none;
+    }
+
+    .submit-btn {
+        align-self: center;
+        width: 15%;
+        height: 8vh;
+    }
+
+    .form-heading {
+        padding-left: 2vw;
+    }
 }
 
-/* xxl devices (larger desktops) */
+/* XXL devices (larger desktops) */
 @media (min-width: 1400px) {
+    .header-nav .link {
+        padding: 3vh 4vh;
+        font-size: large;
+    }
 
+    #skills-description-mobile {
+        display: none;
+    }
+
+    .submit-btn {
+        align-self: center;
+        width: 15%;
+        height: 8vh;
+    }
+
+    .form-heading {
+        padding-left: 2vw;
+    }
 }

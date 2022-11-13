@@ -37,7 +37,10 @@
             </div>
             <div class="info-section" id="mis-skills">
                 <h3 class="subsection-title">Mis skills</h3>
-                <p>Aún estoy aprendiendo a programar, ¡pasa el ratón por cada barra para averiguar
+                <p id="skills-description-mobile">Aún estoy aprendiendo a programar, ¡toca cada barra para averiguar
+                    mi progreso!
+                </p>
+                <p id="skills-description-desktop">Aún estoy aprendiendo a programar, ¡pasa el ratón por cada barra para averiguar
                     mi progreso!
                 </p>
                 <div class="progressbars" id="skill-progressbars">
@@ -50,25 +53,60 @@
             </div>
         </div>
         <div class="form-cont" id="contact-form-cont">
-            <h2>Contacto</h2>
+            <h2 class="form-heading">Contacto</h2>
             <form action="contacto-registrado.html" method="post" class="form" id="contact-form">
-                <div></div>
-                    <div class="form-section">
-                        <label for="name">Nombre</label>
-                        <input required type="text" class="text" id="name" placeholder="Escribe tu nombre">
+                <div id="contactform-inside-cont">
+                    <div class="form-col" id="col1">
+                        <div class="form-section">
+                            <label for="name">Nombre</label>
+                            <input required type="text" name="name" id="name" placeholder="Requerido">
+                        </div>
+                        <div class="form-section">
+                            <label for="last-name">Apellidos</label>
+                            <input required type="text" name="last-name" id="last-name" placeholder="Requerido">
+                        </div>
+                        <div class="form-section">
+                            <label for="telf">Teléfono</label>
+                            <input required type="tel" name="telf" id="telf" placeholder="Requerido">
+                        </div>
+                        <div class="form-section">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="Opcional">
+                        </div>
+                        
+                        
                     </div>
-                    <div class="form-section">
-                        <label for="last-name">Apellidos</label>
-                        <input required type="text" class="text" id="last-name" placeholder="Escribe tus apellidos">
+                    <div class="form-col" id="col2">
+                        <fieldset required class="form-radio-input">
+                            <legend>¿Cómo me conociste?</legend>
+                            <div class="radio-input">
+                                <label for="uni">Universidad</label>
+                                <input type="radio" name="know" id="uni" value="universidad">
+                            </div>
+                            <div class="radio-input">
+                                <label for="kc">Keepcoding kick-off</label>
+                                <input type="radio" name="know" id="kc" value="keepcoding">
+                            </div>
+                            <div class="radio-input">
+                                <label for="school">Colegio</label>
+                                <input type="radio" name="know" id="school" value="colegio">
+                            </div>
+                            <div class="radio-input">
+                                <label for="github">GitHub</label>
+                                <input type="radio" name="know" id="github" value="github">
+                            </div>
+                        </fieldset>
+                        <div class="form-section">
+                            <label for="github-tag">Tag de GitHub</label>
+                            <input required type="text" name="github-username" id="github-tag" placeholder="Requerido" pattern="@[A-Za-z0-9+_-.]+">
+                        </div>
+                        <div class="form-section">
+                            <label for="description">Descríbete</label>
+                            <textarea required name="description" id="description" maxlength="180"></textarea>
+                        </div>
                     </div>
-                    <div class="form-section">
-                        <label for="telf">Teléfono</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-section">
-                        <label for=""></label>
-                        <input type="text">
                 </div>
+                <input class="submit-btn" type="submit" value="Enviar">
             </form>
         </div>
     </main>
