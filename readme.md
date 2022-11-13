@@ -12,4 +12,5 @@ Esta web contiene:
 + Formulario de contacto con los inputs requeridos (no he conseguido que el regex de github funcione :( )
 
 + Footer con iconos de las redes sociales, y links para abrirlas en una nueva página
-  Botón en el footer para subir al comienzo de la página
+
++ Botón animado (con keyframes) en el footer para subir al comienzo de la página
